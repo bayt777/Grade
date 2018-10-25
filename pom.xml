@@ -5,6 +5,10 @@
   <groupId>com</groupId>
   <artifactId>parator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+    <name>parator</name>
+  <url>http://maven.apache.org</url>
+
+  
   <build>
   <plugins>
     <plugin>
@@ -25,9 +29,19 @@
   </plugins>
 </build>
 
-  <name>parator</name>
-  <url>http://maven.apache.org</url>
-  
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <name>Apache Commons Site</name>
+      <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-io/</url>
+    </site>
+  </distributionManagement>
+    <scm>
+    <connection>scm:git:http://git-wip-us.apache.org/repos/asf/commons-io.git</connection>
+    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/commons-io.git</developerConnection>
+    <url>https://git-wip-us.apache.org/repos/asf?p=commons-io.git</url>
+    <tag>commons-io-2.6</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,7 +57,7 @@
     <dependency>
     	<groupId>commons-io</groupId>
    		<artifactId>commons-io</artifactId>
-    	<version>2.4</version>
+    	<version>2.6</version>
 	</dependency>
   </dependencies>
   
